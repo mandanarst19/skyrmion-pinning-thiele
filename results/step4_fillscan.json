@@ -1,0 +1,118 @@
+{
+ "fills": [
+  "2.28",
+  "2.78",
+  "3.28",
+  "3.78"
+ ],
+ "D_um2_per_s": [
+  1.8278414984719824,
+  1.2803962413998,
+  0.8429992773570368,
+  0.5100987421412688
+ ],
+ "D_boot_se": [
+  0.08553191575423216,
+  0.0519070752949339,
+  0.03657060038550762,
+  0.0371904177277047
+ ],
+ "walkers": [
+  8,
+  16,
+  8,
+  8
+ ],
+ "per_walker_D_sd": [
+  0.2598877938607118,
+  0.21690064896849148,
+  0.1091773212445331,
+  0.1113397729396606
+ ],
+ "fit_all_four_fills": {
+  "fills": [
+   2.28,
+   2.78,
+   3.28,
+   3.78
+  ],
+  "slope_dlnD_dfill": -0.826674979147731,
+  "slope_boot_se": 0.04982055288888296,
+  "intercept": 2.519503292057036,
+  "effective_fill_for_D=paper_sim_at_2.7827": {
+   "target_um2_per_s": 0.58313,
+   "fill_kBT": 3.7001826620384555,
+   "boot_se": 0.05619117455036045,
+   "extrapolated_beyond_scan": false
+  },
+  "effective_fill_for_D=experiment_0.6141": {
+   "target_um2_per_s": 0.6141,
+   "fill_kBT": 3.637585345578042,
+   "boot_se": 0.05294272413940033,
+   "extrapolated_beyond_scan": false
+  },
+  "effective_fill_for_D=experiment_0.6141-0.0125": {
+   "target_um2_per_s": 0.6016,
+   "fill_kBT": 3.662462122084481,
+   "boot_se": 0.0542245350205005,
+   "extrapolated_beyond_scan": false
+  },
+  "effective_fill_for_D=experiment_0.6141+0.0125": {
+   "target_um2_per_s": 0.6266,
+   "fill_kBT": 3.6132098682852463,
+   "boot_se": 0.05169947237088977,
+   "extrapolated_beyond_scan": false
+  },
+  "chi2_linear_fit": 1.952255402607768,
+  "dof": 2
+ },
+ "fit_requested_three_fills_2.28_2.78_3.28": {
+  "fills": [
+   2.28,
+   2.78,
+   3.28
+  ],
+  "slope_dlnD_dfill": -0.7757556675432985,
+  "slope_boot_se": 0.06411425303438431,
+  "intercept": 2.3847418197946832,
+  "effective_fill_for_D=paper_sim_at_2.7827": {
+   "target_um2_per_s": 0.58313,
+   "fill_kBT": 3.7693401093429673,
+   "boot_se": 0.08746286440260893,
+   "extrapolated_beyond_scan": true
+  },
+  "effective_fill_for_D=experiment_0.6141": {
+   "target_um2_per_s": 0.6141,
+   "fill_kBT": 3.702634009156173,
+   "boot_se": 0.08221173161384625,
+   "extrapolated_beyond_scan": true
+  },
+  "effective_fill_for_D=experiment_0.6141-0.0125": {
+   "target_um2_per_s": 0.6016,
+   "fill_kBT": 3.7291436558917876,
+   "boot_se": 0.08429172482541938,
+   "extrapolated_beyond_scan": true
+  },
+  "effective_fill_for_D=experiment_0.6141+0.0125": {
+   "target_um2_per_s": 0.6266,
+   "fill_kBT": 3.6766585660807114,
+   "boot_se": 0.08018322266405246,
+   "extrapolated_beyond_scan": true
+  },
+  "chi2_linear_fit": 0.36007983580958935,
+  "dof": 1
+ },
+ "paper_sim_D_at_scan_fills_(log-interp, linked+interacting)": [
+  0.8523149489668084,
+  0.5842990250352543,
+  0.39633956560627576,
+  0.2839093553511917
+ ],
+ "ratio_ours_over_paper_sim": [
+  2.1445611163898097,
+  2.1913372888523064,
+  2.1269622074382384,
+  1.796695785210333
+ ],
+ "paper_sim_local_slope_dlnD_dfill_(2.25-3.75)": -0.743717355368557
+}

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it together with the paper it reproduces."
+title: "Single-skyrmion reproduction of the pinning-landscape Thiele-model results of Fröhlich et al. (2026)"
+authors:
+  - family-names: "Roosta"
+    given-names: "Mandana"
+    alias: "mandanarst19"
+    website: "https://github.com/mandanarst19"
+license: MIT
+references:
+  - type: article
+    title: "Real-Time Modeling of Skyrmion Dynamics in Arbitrary 2D Spatially Dependent Pinning Potential Landscapes"
+    authors:
+      - {family-names: "Fröhlich", given-names: "Simon M."}
+      - {family-names: "Sparmann", given-names: "Tobias"}
+      - {family-names: "Brems", given-names: "Maarten A."}
+      - {family-names: "Rothörl", given-names: "Jan"}
+      - {family-names: "Kammerbauer", given-names: "Fabian"}
+      - {family-names: "Raab", given-names: "Klaus"}
+      - {family-names: "Krishnia", given-names: "Sachin"}
+      - {family-names: "Kläui", given-names: "Mathias"}
+      - {family-names: "Virnau", given-names: "Peter"}
+    journal: "Communications Physics"
+    volume: 9
+    pages: "243"
+    year: 2026
+    doi: "10.1038/s42005-026-02766-6"
+    license: CC-BY-4.0

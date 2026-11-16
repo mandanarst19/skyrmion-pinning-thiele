@@ -1,0 +1,81 @@
+{
+  "n_bins": 2048,
+  "box_um": 93.5936,
+  "empty_fraction": 0.8593740463256836,
+  "E_min": -8.5267,
+  "E_max_finite": 0.0,
+  "inferred_total_counts": 8123318.46581577,
+  "expected_counts_70sk_x_115200frames": 8064000,
+  "n_bins_below_-2.5": 76002,
+  "n_bins_below_-3.5": 35386,
+  "trajectory_checks": [
+    {
+      "orientation": "rows=y, cols=x (adopted)",
+      "n_points": 380,
+      "frac_on_finite_bin": 0.9947368421052631,
+      "mean_E_on_finite": -5.180113492063492
+    },
+    {
+      "orientation": "transposed (control)",
+      "n_points": 380,
+      "frac_on_finite_bin": 0.2657894736842105,
+      "mean_E_on_finite": -2.938459405940594
+    },
+    {
+      "orientation": "y flipped (control)",
+      "n_points": 380,
+      "frac_on_finite_bin": 0.0868421052631579,
+      "mean_E_on_finite": -0.4759848484848485
+    }
+  ],
+  "force_magnitude_kBT_per_um": {
+    "final": {
+      "fill_kBT": 2.78,
+      "finite_side_of_interface": {
+        "median": 30.415754923413566,
+        "p95": 53.73856809056888,
+        "max": 91.51710687362663,
+        "n": 341759
+      },
+      "filled_side_of_interface": {
+        "median": 30.415754923413566,
+        "p95": 48.672733617226704,
+        "max": 81.06014717410329,
+        "n": 560067
+      },
+      "finite_interior": {
+        "median": 12.221899093506016,
+        "p95": 26.658712353798197,
+        "max": 61.61932549579893,
+        "n": 248069
+      },
+      "flat_filled_interior_max": 0.0
+    },
+    "dwell": {
+      "fill_kBT": 4.0,
+      "finite_side_of_interface": {
+        "median": 43.7636761487965,
+        "p95": 70.90164805307471,
+        "max": 110.39349389889185,
+        "n": 341759
+      },
+      "filled_side_of_interface": {
+        "median": 43.7636761487965,
+        "p95": 67.4667029484333,
+        "max": 99.91874410028399,
+        "n": 560067
+      },
+      "finite_interior": {
+        "median": 12.221899093506016,
+        "p95": 26.658712353798197,
+        "max": 61.61932549579893,
+        "n": 248069
+      },
+      "flat_filled_interior_max": 0.0
+    }
+  },
+  "finite_bins_on_map_edge": 0,
+  "noise_step_um_at_dt1e-4": 0.01414213562373095,
+  "bin_um": 0.0457,
+  "max_drift_step_um_at_dt1e-4_fill4": 0.011039349389889186
+}

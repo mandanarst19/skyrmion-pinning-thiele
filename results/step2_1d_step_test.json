@@ -1,0 +1,70 @@
+{
+ "Delta_kBT": 4.0,
+ "F_in_two_bins_adjacent_to_step_kBT_per_um": -43.7636761487965,
+ "expected_Delta_over_2h": 43.7636761487965,
+ "force_zero_elsewhere": true,
+ "walkers": 100,
+ "T_STU": 100.0,
+ "dt": 0.0001,
+ "samples": 1000000,
+ "rows": [
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": -4,
+   "lnP_sim_over_Qinput_up_step": 0.025473048297591422,
+   "lnP_sim_over_Qinput_down_step": 0.14774859718048367,
+   "lnP_analytic_over_Qinput_up_step": 0.02093710876286941,
+   "Ueff_centre_minus_Uinput_up_step_kBT": 0.0
+  },
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": -3,
+   "lnP_sim_over_Qinput_up_step": 0.024529534881849013,
+   "lnP_sim_over_Qinput_down_step": 0.11607725334283217,
+   "lnP_analytic_over_Qinput_up_step": 0.02093710876286941,
+   "Ueff_centre_minus_Uinput_up_step_kBT": 0.0
+  },
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": -2,
+   "lnP_sim_over_Qinput_up_step": 0.018699776723245538,
+   "lnP_sim_over_Qinput_down_step": 0.09859865606887253,
+   "lnP_analytic_over_Qinput_up_step": 0.02093710876286941,
+   "Ueff_centre_minus_Uinput_up_step_kBT": 0.0
+  },
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": -1,
+   "lnP_sim_over_Qinput_up_step": -0.848636609053256,
+   "lnP_sim_over_Qinput_down_step": 1.2855508538941876,
+   "lnP_analytic_over_Qinput_up_step": -0.8176235713326013,
+   "Ueff_centre_minus_Uinput_up_step_kBT": 1.0
+  },
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": 0,
+   "lnP_sim_over_Qinput_up_step": 1.2014003098922592,
+   "lnP_sim_over_Qinput_down_step": -0.7961484542062857,
+   "lnP_analytic_over_Qinput_up_step": 1.1823764286673988,
+   "Ueff_centre_minus_Uinput_up_step_kBT": -1.0
+  },
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": 1,
+   "lnP_sim_over_Qinput_up_step": 0.044251518771576695,
+   "lnP_sim_over_Qinput_down_step": 0.028990951095684878,
+   "lnP_analytic_over_Qinput_up_step": 0.02093710876287028,
+   "Ueff_centre_minus_Uinput_up_step_kBT": 0.0
+  },
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": 2,
+   "lnP_sim_over_Qinput_up_step": -0.044695967244919484,
+   "lnP_sim_over_Qinput_down_step": 0.04054722535984828,
+   "lnP_analytic_over_Qinput_up_step": 0.02093710876287028,
+   "Ueff_centre_minus_Uinput_up_step_kBT": 0.0
+  },
+  {
+   "bin_rel_to_step(d<0 low side, d>=0 high side)": 3,
+   "lnP_sim_over_Qinput_up_step": 0.009065209646532816,
+   "lnP_sim_over_Qinput_down_step": 0.03249652162473178,
+   "lnP_analytic_over_Qinput_up_step": 0.02093710876287028,
+   "Ueff_centre_minus_Uinput_up_step_kBT": 0.0
+  }
+ ],
+ "max_abs_lnP_sim_minus_analytic": 0.21182246466015975,
+ "cyclic_check_Ueff_edge_end": 0.0
+}

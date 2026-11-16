@@ -1,0 +1,23 @@
+{
+  "cluster_id": 214,
+  "n_bins": 1648,
+  "n_finite_bins": 713,
+  "n_empty_bins_in_dilation_ring": 935,
+  "x_range_um": [
+    5.3926,
+    8.134599999999999
+  ],
+  "y_range_um": [
+    42.4553,
+    44.1005
+  ],
+  "touches_edge": false,
+  "site_ids_inside": [
+    339,
+    340
+  ],
+  "n_sites_total": 685,
+  "n_clusters_total": 424,
+  "connectivity": 8,
+  "dilation": "euclidean disk 250 nm"
+}

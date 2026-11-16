@@ -1,0 +1,58 @@
+# Every parameter with its source.
+#   paper = Fröhlich et al., Commun. Phys. 9, 243 (2026), https://doi.org/10.1038/s42005-026-02766-6 (CC BY 4.0); page numbers refer to the published PDF.
+#   data  = Supplementary Data 1 of the paper (xlsx; sheet names as in the file).
+#   ours  = a choice made in this reproduction, NOT stated in the paper.
+# Keys marked [code] are read by the scripts; the other keys document values that are fixed inside the scripts.
+data:
+  xlsx: data/42005_2026_2766_MOESM4_ESM.xlsx      # [code] download Supplementary Data 1 from the paper's page (not redistributed here)
+  landscape_sheet: fig1_a                           # data: full landscape (Data availability statement, p.7: Fig. 1b, 2c are crops of fig1_a)
+  trajectory_sheet: fig1_b                          # data
+landscape:
+  bin_size_um: 0.0457                               # [code] paper p.6 (45.7 +- 0.5 nm, 4x4 bins per camera pixel)
+  n_bins: 2048                                      # data: sheet shape; 2048 x 45.7 nm = 93.59 um (paper p.6: 93.6 um CNN crop)
+  empty_encoding: inf                               # ours (observed in data); 85.94% empty (paper p.2: ~86%)
+  energy_encoding: "E = -ln(counts over 2 h), one count = 0 kBT"   # ours (inference); checked: sum(exp(-E)) = 8.12e6 ~ 70 sk x 115200 frames; and exp(-2.78)/2h = 0.031 counts/h, 134 days (paper p.4)
+  orientation: "rows = y, cols = x, row 0 at y = 0, no flip"       # ours (inference); checked with the fig1_b trajectory (99.5% of points on finite bins) and Fig. 2 sites A/B
+  colour_range_kBT: [-8, 0]                         # [code] paper Fig. 1 colour bar
+fill:
+  dwell_time_kBT: 4.0                               # [code] paper p.7 (fill used for dwell-time simulations)
+  final_kBT: 2.78                                   # [code] paper p.4 and Fig. 3: (2.78 +- 0.03) kBT; data fig3: 2.7827 +- 0.0293
+simulation:
+  equation: "overdamped Thiele / Langevin, gyrotropic term neglected (G_rel = 0)"   # paper p.2
+  integrator: "stochastic Heun, same noise increment in predictor and corrector"   # paper p.5 (Heun); noise detail = ours (standard)
+  dt_STU: 1.0e-4                                    # paper p.5
+  gamma_sim: 1.0                                    # paper p.5-6
+  kBT_sim: 1.0                                      # paper p.5-6
+  length_unit_um: 1.0                               # paper p.3 (STU = gamma * 1 um^2 / kBT)
+  boundary: periodic                                # paper p.6
+  forces: "central differences on the FILLED binned potential, periodic wrap, nearest-bin lookup (piecewise-constant force)"   # paper p.5: 'finite differences' (+Suppl. Note 1: constant force per bin); central/nearest-bin = ours
+  frame_conversion_STU_per_frame: 1.34              # paper p.3 (1.34 +- 0.10)
+  frame_conversion_uncertainty: 0.10                # paper p.3
+  frame_time_s: 0.0625                              # paper p.6 (16 fps)
+  damping_paper: 0.047                              # paper p.3: (0.047 +- 0.004) kBT s um^-2  (check: 0.0625/1.34 = 0.0466)
+  writeout_STU_for_dwell_analysis: 0.01             # paper p.7 (0.01 STU per writeout, then every n-th; conversion = 0.01 n)
+labelling:
+  site_threshold_kBT: -2.5                          # paper p.6 (all bins below; values before filling)
+  site_core_threshold_kBT: -3.5                     # paper p.6 (at least one bin below)
+  cluster_expansion_nm: 250                         # paper p.6
+  exclude_edge_touching: true                       # paper p.6
+  min_tau_esc_frames: 4                             # paper p.3 (sites with tau_esc > 4 frames; not applied to sites A/B, whose tau_exp is 17.6-18.2 and 6.81-7.41 frames, data fig2_b/e)
+  connectivity: 8                                   # ours (our choice); 4-neighbour tested
+  dilation: euclidean_disk                          # ours (our choice); square dilation tested
+dwell_time:
+  distribution: "discrete exponential P(t) = (exp(1/tau)-1) exp(-t/tau), t >= 1 frame"   # paper p.3, p.7
+  fits: "MLE (primary) and unweighted least squares on the per-frame histogram"           # ours
+  definitions: "see src/dwell.py (NaN-ignored / NaN-ends-dwell; hop-only / all endings)"   # ours
+  primary_sampling: "unconfined walkers, restarted from the cluster Boltzmann distribution on exit"   # ours (our choice)
+  sensitivity: "reflecting wall at the cluster boundary; 4-neighbour mask; square-dilation mask"        # ours
+  walkers: {restart: "24 x 25000 STU", reflect: "8 x 20000 STU", mask_variants: "8 x 10000 STU each"}  # ours
+diffusion:
+  msd_dimension_d: 2                                # paper p.7
+  fit_window_s: [5, 15]                             # paper p.4, p.7
+  estimator: "sliding-window MSD per trajectory, duration-weighted mean (equal durations), linear fit with free intercept; D = slope/(2d)"   # paper p.7; free intercept = ours
+  walkers: "16 x 50000 STU at 2.78 kBT; 8 x 50000 STU at 2.28, 3.28, 3.78; flat control 200 x 10000 STU at dt = 1e-2 (exact for F = 0)"   # ours
+reference_values:
+  D_experiment_um2_per_s: [0.6141, 0.0125]          # data fig3 (columns 'experimental diffusion'); not stated numerically in the text
+  D_sim_paper_um2_per_s_at_2.75_and_3.0: [0.5975, 0.496]   # data fig3 (linked, interacting simulations)
+  D_no_pinning_low_density_um2_per_s: [11.9, 0.9]   # paper p.5
+  free_D_um2_per_s: 21.44                           # ours (derived): kBT/gamma = 1 um^2/STU x 1.34 STU / 0.0625 s

@@ -1,0 +1,246 @@
+{
+  "cluster_id": 214,
+  "window_rows_cols": [
+    929,
+    965,
+    118,
+    178
+  ],
+  "fill_kBT": 4.0,
+  "n_mask_bins": 1648,
+  "walkers": 8,
+  "T_STU_per_walker": 20000.0,
+  "sample_interval_STU": 0.01,
+  "min_pooled_count_for_bin_statistics": 30,
+  "bootstrap": "400 resamples over the 8 walkers (crude: only 8 walkers)",
+  "d_dt=0.0001": {
+    "samples_total": 16000000,
+    "n_bins_used": 914,
+    "slope_weighted": 0.9751549272308901,
+    "slope_se_bootstrap": 0.003276649974946477,
+    "intercept": -0.1119993267863421,
+    "weighted_mean_resid": 0.011514803958007419,
+    "rms_resid": 1.2728507590770899,
+    "std_z": 20.740015992971557,
+    "frac_|z|<2": 0.08424507658643327,
+    "by_category": {
+      "core (E<-3.5)": {
+        "n_bins": 134,
+        "mean_resid_lnP_minus_lnQ": 0.005093122262857743,
+        "rms_resid": 0.08435941545512876,
+        "median_resid": 0.0005096645977693548,
+        "std_z_vs_walker_bootstrap": 8.541881379865647,
+        "median_pooled_count": 75275.5
+      },
+      "periphery (-3.5..-2.5)": {
+        "n_bins": 62,
+        "mean_resid_lnP_minus_lnQ": 0.08776530366052078,
+        "rms_resid": 0.1637738762098937,
+        "median_resid": 0.04440622464581079,
+        "std_z_vs_walker_bootstrap": 11.668264141097671,
+        "median_pooled_count": 12103.0
+      },
+      "shallow (E>=-2.5)": {
+        "n_bins": 214,
+        "mean_resid_lnP_minus_lnQ": 0.11522707648913559,
+        "rms_resid": 0.39048218709749755,
+        "median_resid": 0.07448823559428686,
+        "std_z_vs_walker_bootstrap": 20.496402984081595,
+        "median_pooled_count": 2534.5
+      },
+      "finite interface bins": {
+        "n_bins": 281,
+        "mean_resid_lnP_minus_lnQ": -0.6337972796569548,
+        "rms_resid": 1.5157389421516791,
+        "median_resid": -1.2403209496693837,
+        "std_z_vs_walker_bootstrap": 13.813638912840412,
+        "median_pooled_count": 196.0
+      },
+      "filled bins (4 kBT)": {
+        "n_bins": 223,
+        "mean_resid_lnP_minus_lnQ": 2.2475040456527573,
+        "rms_resid": 1.8940338173677465,
+        "median_resid": 1.6027978535385312,
+        "std_z_vs_walker_bootstrap": 15.952585314786319,
+        "median_pooled_count": 50.0
+      }
+    },
+    "category_probability_mass": {
+      "core (E<-3.5)": {
+        "n_bins": 134,
+        "expected_Q": 0.9036066598433805,
+        "observed_P": 0.906541375,
+        "observed_se": 0.0005596281909424981
+      },
+      "periphery (-3.5..-2.5)": {
+        "n_bins": 62,
+        "expected_Q": 0.04414136809655866,
+        "observed_P": 0.0476695625,
+        "observed_se": 0.0002714119932246662
+      },
+      "shallow (E>=-2.5)": {
+        "n_bins": 214,
+        "expected_Q": 0.035415826539091574,
+        "observed_P": 0.0375744375,
+        "observed_se": 0.00025836590065990493
+      },
+      "finite interface bins": {
+        "n_bins": 281,
+        "expected_Q": 0.015286058460022086,
+        "observed_P": 0.006273312499999999,
+        "observed_se": 4.3153439081837246e-05
+      },
+      "filled bins (4 kBT)": {
+        "n_bins": 661,
+        "expected_Q": 0.0004158773019422336,
+        "observed_P": 0.0015003125,
+        "observed_se": 1.3924452720639888e-05
+      },
+      "wall-adjacent (<=2 bins)": {
+        "n_bins": 296,
+        "expected_Q": 0.0011342097590048817,
+        "observed_P": 0.00044100000000000004,
+        "observed_se": 9.033420250431098e-06
+      }
+    }
+  },
+  "d_dt=5e-05": {
+    "samples_total": 16000000,
+    "n_bins_used": 924,
+    "slope_weighted": 0.9757418685081831,
+    "slope_se_bootstrap": 0.00245214288412464,
+    "intercept": -0.10911828537951254,
+    "weighted_mean_resid": 0.011465472165260482,
+    "rms_resid": 1.2635921896040796,
+    "std_z": 19.787807496598937,
+    "frac_|z|<2": 0.07142857142857142,
+    "by_category": {
+      "core (E<-3.5)": {
+        "n_bins": 134,
+        "mean_resid_lnP_minus_lnQ": 0.005151819143373348,
+        "rms_resid": 0.08594918846998059,
+        "median_resid": 0.0018959184902849202,
+        "std_z_vs_walker_bootstrap": 10.16743320384986,
+        "median_pooled_count": 74522.0
+      },
+      "periphery (-3.5..-2.5)": {
+        "n_bins": 62,
+        "mean_resid_lnP_minus_lnQ": 0.08564156334377739,
+        "rms_resid": 0.16320859706320257,
+        "median_resid": 0.03639229637680197,
+        "std_z_vs_walker_bootstrap": 13.379088304207322,
+        "median_pooled_count": 12088.0
+      },
+      "shallow (E>=-2.5)": {
+        "n_bins": 214,
+        "mean_resid_lnP_minus_lnQ": 0.11444701287538074,
+        "rms_resid": 0.39199469912659124,
+        "median_resid": 0.06265160000607395,
+        "std_z_vs_walker_bootstrap": 19.117171804569974,
+        "median_pooled_count": 2533.5
+      },
+      "finite interface bins": {
+        "n_bins": 280,
+        "mean_resid_lnP_minus_lnQ": -0.6223869634740721,
+        "rms_resid": 1.4820401942066046,
+        "median_resid": -1.2413905500267362,
+        "std_z_vs_walker_bootstrap": 11.4652197785536,
+        "median_pooled_count": 206.5
+      },
+      "filled bins (4 kBT)": {
+        "n_bins": 234,
+        "mean_resid_lnP_minus_lnQ": 2.217140014048088,
+        "rms_resid": 1.8774300373984136,
+        "median_resid": 1.642018566691812,
+        "std_z_vs_walker_bootstrap": 15.784368962620572,
+        "median_pooled_count": 52.0
+      }
+    },
+    "category_probability_mass": {
+      "core (E<-3.5)": {
+        "n_bins": 134,
+        "expected_Q": 0.9036066598433805,
+        "observed_P": 0.9065194375,
+        "observed_se": 0.0004178634603948846
+      },
+      "periphery (-3.5..-2.5)": {
+        "n_bins": 62,
+        "expected_Q": 0.04414136809655866,
+        "observed_P": 0.047572,
+        "observed_se": 0.00018858382632108852
+      },
+      "shallow (E>=-2.5)": {
+        "n_bins": 214,
+        "expected_Q": 0.035415826539091574,
+        "observed_P": 0.0375256875,
+        "observed_se": 0.00019122403453613576
+      },
+      "finite interface bins": {
+        "n_bins": 281,
+        "expected_Q": 0.015286058460022086,
+        "observed_P": 0.0063711875,
+        "observed_se": 2.9641528551067405e-05
+      },
+      "filled bins (4 kBT)": {
+        "n_bins": 661,
+        "expected_Q": 0.0004158773019422336,
+        "observed_P": 0.001520375,
+        "observed_se": 1.823027339728204e-05
+      },
+      "wall-adjacent (<=2 bins)": {
+        "n_bins": 296,
+        "expected_Q": 0.0011342097590048817,
+        "observed_P": 0.0004913125,
+        "observed_se": 1.7339828829684956e-05
+      }
+    }
+  },
+  "e_dt_vs_halfdt": {
+    "n_bins_used": 891,
+    "slope_lnP(dt/2)_vs_lnP(dt)": 1.000469110154986,
+    "intercept": 0.002249591330209025,
+    "mean_diff": 7.517507900012941e-05,
+    "rms_diff": 0.11014075972980823,
+    "mean_z": -0.0834154540060534,
+    "std_z": 0.9890300562821448,
+    "frac_|z|<2": 0.941638608305275,
+    "by_category": {
+      "core (E<-3.5)": {
+        "n_bins": 134,
+        "mean_lnP_dt_minus_lnP_dt/2": 2.197098108476754e-05,
+        "rms": 0.007083914594209789,
+        "mean_z": -0.04626546728374055,
+        "std_z": 0.5307304745752022
+      },
+      "periphery (-3.5..-2.5)": {
+        "n_bins": 62,
+        "mean_lnP_dt_minus_lnP_dt/2": 0.0020373599446609357,
+        "rms": 0.012181573295947322,
+        "mean_z": 0.03639063074393254,
+        "std_z": 0.6310230795256835
+      },
+      "shallow (E>=-2.5)": {
+        "n_bins": 214,
+        "mean_lnP_dt_minus_lnP_dt/2": 0.0013280957495095838,
+        "rms": 0.033045102655599165,
+        "mean_z": 0.01159822064277372,
+        "std_z": 1.0065246563760524
+      },
+      "finite interface bins": {
+        "n_bins": 280,
+        "mean_lnP_dt_minus_lnP_dt/2": -0.01489400680989437,
+        "rms": 0.13033992491663227,
+        "mean_z": -0.24529939280975777,
+        "std_z": 1.1297429328396353
+      },
+      "filled bins (4 kBT)": {
+        "n_bins": 201,
+        "mean_lnP_dt_minus_lnP_dt/2": 0.0006294460486552126,
+        "rms": 0.16990372501429252,
+        "mean_z": -0.020786095722972863,
+        "std_z": 1.0552465316507091
+      }
+    },
+    "note": "independent noise streams (seeds 424242 vs 737373); z uses walker-bootstrap SEs of both runs"
+  }
+}
